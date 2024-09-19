@@ -4,7 +4,7 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     head: [['link', {rel: 'icon', href: '/logo.png'}]],
     title: "松泽文档库",
-    base: '/matsu/',
+    base: '/matsu/docs/',
     description: "A VitePress Site",
     themeConfig: {
         outlineTitle: '文章目录',
