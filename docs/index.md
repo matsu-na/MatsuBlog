@@ -11,18 +11,21 @@ hero:
     alt: 背景图
   actions:
     - theme: brand
-      text: Markdown 示例
-      link: https://vitepress.dev/
+      text: 前端开发文档
+      link: /paper/front-end
     - theme: alt
-      text: API 示例
-      link: /api-examples
+      text: 后端开发文档
+      link: /paper/rear-end
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: bilibili
+    details: 当代大学生的聚集之地
+  - title: CSDN
+    details: 各种问题的总结之地
+  - title: IDEA
+    details: 强大软件的产出之地
+  - title: Nanuto
+    details: 不好意思，这个是我老婆
+
 ---
 

@@ -137,6 +137,7 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/*md渲染部分*/
 .VPDoc .container {
     margin: 0 auto !important;
 }
@@ -168,3 +169,27 @@
     scrollbar-width: none;
 }
 
+/*首页修改*/
+
+.VPHome .container{
+    //宽高扩大1.1
+    width: 1400px !important;
+    margin: 40px auto;
+}
+
+
+.VPFeature:hover {
+    border: 1px solid #3a5ccc;
+}
+    /*尾部修改*/
+.VPFooter{
+    height: 50px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    border-top:1px solid #eee ;
+}
+.VPFooter .container{
+    line-height: 50px;
+}
