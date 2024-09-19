@@ -16,6 +16,19 @@ export default defineConfig({
             {text: '前端', link: '/paper/front-end'},
             {text: '后端', link: '/paper/rear-end'},
             {text: '踩坑', link: '/paper/error'},
+            {text: '工具',items:[
+                {text: 'Vue', link: '/paper/tool/vue'},
+                {text: 'React', link: '/paper/tool/react'},
+                {text: 'Node', link: '/paper/tool/node'},
+                {text: 'Python', link: '/paper/tool/python'}
+                ]},
+            {
+                text: '关于我',
+                items: [
+                    {text: '我的信息', link: '/paper/about'},
+                    {text: '关于本站', link: '/paper/about-site'},
+                ]
+            },
             {text: '收藏网站', link: '/paper/web'}
         ],
 

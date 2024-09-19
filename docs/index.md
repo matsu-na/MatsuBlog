@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "松泽-个人代码开发者"
-  text: "一个代码笔记网站"
+  name: "松泽 - 个人开发者"
+  text: "云代码笔记本"
   tagline: 热爱代码，更热爱生活~
   image: 
     src: /background.png
@@ -18,7 +18,7 @@ hero:
       link: /paper/rear-end
 
 features:
-  - title: bilibili
+  - title: Bilibili
     details: 当代大学生的聚集之地
   - title: CSDN
     details: 各种问题的总结之地

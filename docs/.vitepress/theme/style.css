@@ -174,7 +174,7 @@
 .VPHome .container{
     //宽高扩大1.1
     width: 1400px !important;
-    margin: 40px auto;
+    margin: 40px auto 10px;
 }
 
 
