@@ -23,10 +23,10 @@ export default defineConfig({
                 {text: 'Python', link: '/paper/tool/python'}
                 ]},
             {
-                text: '关于我',
+                text: '关于',
                 items: [
-                    {text: '我的信息', link: '/paper/about'},
-                    {text: '关于本站', link: '/paper/about-site'},
+                    {text: '我的信息', link: '/paper/me'},
+                    {text: '关于本站', link: '/paper/about'},
                 ]
             },
             {text: '收藏网站', link: '/paper/web'}

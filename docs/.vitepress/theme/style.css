@@ -193,3 +193,7 @@
 .VPFooter .container{
     line-height: 50px;
 }
+
+a{
+    text-decoration: none !important;
+}

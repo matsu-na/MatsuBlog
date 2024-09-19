@@ -21,11 +21,12 @@ features:
   - title: Bilibili
     details: 当代大学生的聚集之地
   - title: CSDN
-    details: 各种问题的总结之地
+    details: 各种问题的终结之地
   - title: IDEA
     details: 强大软件的产出之地
   - title: Nanuto
     details: 不好意思，这个是我老婆
 
 ---
+
 

@@ -1,8 +1,7 @@
 # 点击跳转对应网站
 
 ## 代码类
-
-- [阿里云](https://account.aliyun.com/) 
+- [阿里云](https://account.aliyun.com/)
 - [Maven](https://mvnrepository.com/)
 - [Github](https://github.com/)
 - [Gitee](https://gitee.com/)
@@ -20,7 +19,6 @@
 - [Aunt Design](https://1x.antdv.com/docs/vue/introduce-cn/)
 
 ## 生成类
-
 - [文心一言](https://yiyan.baidu.com/)
 - [通义千问](https://tongyi.aliyun.com/)
 
@@ -29,5 +27,5 @@
 ## 工具类
 
 ## 作品类
-
 - [有谷社](https://ulove.matsu-sz.top/)
+
