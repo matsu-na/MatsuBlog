@@ -17,12 +17,14 @@ export default defineConfig({
             {text: '后端', link: '/paper/rear-end'},
             {text: '踩坑', link: '/paper/error'},
             {text: '杂项', link: '/paper/sundry'},
-            {text: '工具',items:[
-                {text: 'Vue', link: '/paper/tool/vue'},
-                {text: 'React', link: '/paper/tool/react'},
-                {text: 'Node', link: '/paper/tool/node'},
-                {text: 'Python', link: '/paper/tool/python'}
-                ]},
+            {
+                text: '工具', items: [
+                    {text: 'Vue', link: '/paper/tool/vue'},
+                    {text: 'React', link: '/paper/tool/react'},
+                    {text: 'Node', link: '/paper/tool/node'},
+                    {text: 'Python', link: '/paper/tool/python'}
+                ]
+            },
             {
                 text: '关于',
                 items: [
@@ -32,10 +34,6 @@ export default defineConfig({
             },
             {text: '收藏网站', link: '/paper/web'}
         ],
-
-        transition: {
-
-        },
 
         sidebar: false,
 
@@ -64,38 +62,28 @@ export default defineConfig({
         ],
 
         footer: {
-            copyright: 'Copyright © 2022-present Matsu'
+            copyright: 'Copyright © 2024-present Matsu'
         }
         ,
         search: {
             provider: 'local',
-            options:
-                {
-                    translations: {
-                        button: {
-                            buttonText: "搜索文档",
-                            buttonAriaLabel:
-                                "搜索文档",
-                        }
-                        ,
-                        modal: {
-                            noResultsText: "无法找到相关结果",
-                            resetButtonTitle:
-                                "清除查询条件",
-                            footer:
-                                {
-                                    selectText: "选择",
-                                    navigateText:
-                                        "切换",
-                                }
-                            ,
-                        }
-                        ,
-                    }
-                    ,
-                }
-        }
-        ,
+            options: {
+                translations: {
+                    button: {
+                        buttonText: "搜索文档",
+                        buttonAriaLabel: "搜索文档",
+                    },
+                    modal: {
+                        noResultsText: "无法找到相关结果",
+                        resetButtonTitle: "清除查询条件",
+                        footer: {
+                            selectText: "选择",
+                            navigateText: "切换",
+                        },
+                    },
+                },
+            }
+        },
     },
 
 })
