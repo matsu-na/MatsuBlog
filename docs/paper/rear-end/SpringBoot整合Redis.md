@@ -114,7 +114,7 @@ public class RedisConfig {
 
 ## 补充：常见的操作
 
-#### 1、String操作
+#### String操作
 
 ```java
  redisTemplate.opsForValue().set(key1, "张三");
