@@ -1,14 +1,14 @@
 # SpringBoot整合Redis进行开发
 
-​	在最近几次的开发中，发现每次都会忘记Redis在项目中应该怎样去配置，现在写一个文章方便以后查阅，希望以后不要忘记怎么去开发了！
+在最近几次的开发中，发现每次都会忘记Redis在项目中应该怎样去配置，现在写一个文章方便以后查阅，希望以后不要忘记怎么去开发了！
 
 ## 1、新建一个SpringBoot项目
 
-​	选择自己最熟悉的SpringBoot的版本即可，这里用的是2.7.18。
+选择自己最熟悉的SpringBoot的版本即可，这里用的是2.7.18。
 
 ### 1.1、在pom.xml中添加依赖项
 
-​	除开正常创建项目时添加的spring-boot-starter-web等依赖，还应该添加两个依赖
+除开正常创建项目时添加的spring-boot-starter-web等依赖，还应该添加两个依赖
 
 ```xml
         <dependency>
@@ -23,7 +23,7 @@
 
 ### 1.2、配置Redis属性
 
-```
+```yaml
 spring:
   redis:
     # Redis服务器地址
@@ -50,7 +50,7 @@ spring:
 
 ## 2、修改序列化
 
-​	这一步必须配置，不然你在数据库里面看到的就是一堆乱掉的编码，像\xAC\xED\x00\x05t这样类似的东西，不方便阅读，所以这一步是重中之重！
+这一步必须配置，不然你在数据库里面看到的就是一堆乱掉的编码，像\xAC\xED\x00\x05t这样类似的东西，不方便阅读，所以这一步是重中之重！
 
 ### 2.1、修改json序列化
 
@@ -80,9 +80,9 @@ public class RedisConfig {
 
 ### 2.2、手动String序列化
 
-​	编写这个的目的是防止自带的序列化器将class的信息也写入Redis带来不必要的开销，如果并不在乎Redis的存储空间或者网站较小时可以直接忽略这一步。
+编写这个的目的是防止自带的序列化器将class的信息也写入Redis带来不必要的开销，如果并不在乎Redis的存储空间或者网站较小时可以直接忽略这一步。
 
-```
+```java
     @Autowired
     private StringRedisTemplate redisTemplate;
     // JSON工具
@@ -105,7 +105,7 @@ public class RedisConfig {
 
 ## 3、使用
 
-​	在需要使用到Redis时候，直接将StringRedisTemplate进行注入就可以使用了。
+在需要使用到Redis时候，直接将StringRedisTemplate进行注入就可以使用了。
 
 ```java
     @Resource
@@ -116,7 +116,7 @@ public class RedisConfig {
 
 #### 1、String操作
 
-```
+```java
  redisTemplate.opsForValue().set(key1, "张三");
  String s = redisTemplate.opsForValue().get(key1);
  
@@ -126,7 +126,7 @@ public class RedisConfig {
 
 #### 2、Set操作
 
-```
+```java
 redisTemplate.opsForSet().add(key5,"语文");
 redisTemplate.opsForSet().add(key5,"数学");
 redisTemplate.opsForSet().add(key5,"英语");
@@ -139,7 +139,7 @@ Set<String> intersect = redisTemplate.opsForSet().intersect(key5, key6);
 
 #### 3、Hash操作
 
-```
+```java
 redisTemplate.opsForHash().put(key3,"家庭住址","开封");
 redisTemplate.opsForHash().put(key3,"大学","开封大学");
 
@@ -148,7 +148,7 @@ List<Object> values = redisTemplate.opsForHash().values(key3);
 
 #### 4、List操作
 
-```
+```java
  redisTemplate.opsForList().leftPush(key1,"张三");
  redisTemplate.opsForList().leftPush(key1,"李四");
  redisTemplate.opsForList().leftPush(key1,"王五");
@@ -158,7 +158,7 @@ List<Object> values = redisTemplate.opsForHash().values(key3);
 
 #### 5、Zset操作
 
-```
+```java
 redisTemplate.opsForZSet().add(key6, "语文", 88);
 redisTemplate.opsForZSet().add(key6, "数学", 99);
 redisTemplate.opsForZSet().add(key6, "英语", 66);
@@ -168,7 +168,7 @@ ZSetOperations.TypedTuple<String> stringTypedTuple = redisTemplate.opsForZSet().
 
 #### 6、BitMap操作
 
-```
+```java
 redisTemplate.opsForValue().setBit(key3,2,true);
 redisTemplate.opsForValue().setBit(key3,144,true);
 RedisCallback<Long> callback=connection -> {
