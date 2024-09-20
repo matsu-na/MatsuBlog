@@ -16,6 +16,7 @@ export default defineConfig({
             {text: '前端', link: '/paper/front-end'},
             {text: '后端', link: '/paper/rear-end'},
             {text: '踩坑', link: '/paper/error'},
+            {text: '杂项', link: '/paper/sundry'},
             {text: '工具',items:[
                 {text: 'Vue', link: '/paper/tool/vue'},
                 {text: 'React', link: '/paper/tool/react'},
