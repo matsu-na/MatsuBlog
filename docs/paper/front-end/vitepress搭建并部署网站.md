@@ -92,7 +92,7 @@ features控制的则是标题下方的小方块中间的字，修改后会改变
 
 首先是title和description属性。title可以直接将左上角的标题进行修改。description是网站的描述，但是看过之后似乎没有地方受到影响，也就无所谓了。之后是想要给页面标签栏添加icon，在title的同级添加属性
 
-```js
+```json
 head: [['link', {rel: 'icon', href: '/logo.png'}]],
 ```
 
@@ -100,7 +100,7 @@ head: [['link', {rel: 'icon', href: '/logo.png'}]],
 
 然后是与页面左上角的标题一起的icon，为其添加属性
 
-```js
+```json
 logo: 图片位置
 ```
 
@@ -204,7 +204,7 @@ outline: [2, 6],
 
 后面的配置都是我个人喜好，也可以根据自身喜好进行定制。
 
-[VitePress参考文档]([VitePress 是什么？ | VitePress](https://vitepress.dev/zh/guide/what-is-vitepress))
+[VitePress参考文档](https://vitepress.dev/zh/guide/what-is-vitepress)
 
 ## 部署到Github Pages
 
