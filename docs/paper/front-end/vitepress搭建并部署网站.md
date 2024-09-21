@@ -92,15 +92,15 @@ features控制的则是标题下方的小方块中间的字，修改后会改变
 
 首先是title和description属性。title可以直接将左上角的标题进行修改。description是网站的描述，但是看过之后似乎没有地方受到影响，也就无所谓了。之后是想要给页面标签栏添加icon，在title的同级添加属性
 
-```json
-head: [['link', {rel: 'icon', href: '/logo.png'}]],
+```
+head: [['link', {rel: 'icon', href: '/logo.png'}]]
 ```
 
 接下的配置将进入下面的`themeConfig`属性，都需要配置到与nav平级的地方。
 
 然后是与页面左上角的标题一起的icon，为其添加属性
 
-```json
+```
 logo: 图片位置
 ```
 
@@ -122,7 +122,7 @@ logo: 图片位置
 
 ![image-20240920220159826](imgs\image-20240920220159826.png)
 
-```json
+```
 socialLinks: [
             {
                 icon: {
@@ -139,7 +139,7 @@ socialLinks: [
 
 在`themeConfig`属性下，`nav`同级的位置添加版权信息。
 
-```json
+```
       footer: {
             copyright: 'Copyright © 2022-present Matsu'
         }
@@ -153,7 +153,7 @@ socialLinks: [
 
 将下面这段代码复制到与`nav`平级的位置即可，可以参考页面进行定制。
 
-```js
+```
         search: {
             provider: 'local',
             options: {
@@ -183,21 +183,21 @@ socialLinks: [
 
 如果想要关闭绿色区域部分，只需要进行将`themeConfig`属性下的`sidebar`设置为false即可。
 
-```json
-sidebar: false,
+```
+sidebar: false
 ```
 
 如果想红色区域在左边，只需要进行将`themeConfig`属性下的`aside`设置为left即可。
 
-```json
-aside: 'left',
+```
+aside: 'left'
 ```
 
 针对于红色部分，如果我们想要修改页面导航的名称，只需要在`themeConfig`属性下添加属性。
 
-```json
+```
 outlineTitle: '文章目录',
-outline: [2, 6],
+outline: [2, 6]
 ```
 
 对于`outline`属性进行说明，这个是md文档的几级标题会显示在文档目录中，现在这个设置的意义就是，一级标题不在目录中显示，二级到六级标题会显示在文档目录之中。
