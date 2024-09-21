@@ -32,7 +32,7 @@ SpringMVC的优缺点
 
 之后在生成器旁边选择Maven，这里如果没有本地的Maven的话需要到官网进行下载，在工件位置选择webapp，为你的项目起一个名字，其他的属性可以不用进行修改，直接点击创建即可。
 
-如果你的电脑没有安装maven，请参考我的另一篇文章[给电脑安装Maven仓库并配置阿里云镜像](给电脑安装Maven仓库并配置阿里云仓库.md)。
+如果你的电脑没有安装maven，请参考我的另一篇文章[给电脑安装Maven仓库并配置阿里云镜像](给电脑安装Maven仓库并配置阿里云镜像.md)。
 
 等待创建完毕就能够看到项目的目录结构了，之后再main目录下新建一个文件夹，并且命名为`java`。
 
@@ -42,20 +42,22 @@ SpringMVC的优缺点
 
 ### 修改pom.xml
 
-于src目录同级的位置下存在一个`pom.xml`文件，在这个文件中，修改dependencies内的内容，将其修改为下面这段代码，之后右上角会有一个M标识，点击刷新即可。
+于src目录同级的位置下存在一个`pom.xml`文件，在这个文件中，修改dependencies的内容，将其修改为下面这段代码，之后右上角会有一个M标识，点击刷新即可。
 
 ```xml
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>5.2.10.RELEASE</version>
-        </dependency>
+<dependencies>
+  <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.1.0</version>
+    <scope>provided</scope>
+  </dependency>
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.2.10.RELEASE</version>
+  </dependency>
+</dependencies>
 ```
 
 如果右上角不存在刷新按钮，请单击鼠标右键，选择Maven->重新加载项目
