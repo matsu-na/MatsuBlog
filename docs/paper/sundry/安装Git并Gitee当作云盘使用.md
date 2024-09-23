@@ -29,16 +29,16 @@ git --version
 打开cmd输入`ssh-keygen`，之后连续按下三次回车，就不设置密码了。
 
 ```shell
-ssh-keygen
+ssh-keygen -t rsa -C "xxx@xxx.com"
 ```
 
-![image-20240923202957038](imgs\image-20240923202957038.png)
+![img.png](imgs/img.png)
 
 打开C盘的用户目录，选择对应账户的文件夹，找到`.ssh`文件夹，如果没有找到，请点击查看->显示->隐藏的项目，将配置打开后就能找到对应的`.ssh`文件夹了。
 
 ![image-20240923203146704](imgs\image-20240923203146704.png)
 
-使用记事本打开`.pub`后缀的文件，将里面的内容复制下来。
+使用记事本打开`id_rsa.pub`后缀的文件，将里面的内容复制下来。
 
 ![image-20240923203400400](imgs\image-20240923203400400.png)
 
