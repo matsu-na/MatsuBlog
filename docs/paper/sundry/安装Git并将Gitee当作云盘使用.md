@@ -1,4 +1,4 @@
-# 安装Git并Gitee当作云盘使用
+# 安装Git并将Gitee当作云盘使用
 
 ## 安装Git
 
@@ -29,7 +29,7 @@ git --version
 打开cmd输入`ssh-keygen`，之后连续按下三次回车，就不设置密码了。
 
 ```shell
-ssh-keygen -t rsa -C "xxx@xxx.com"
+ssh-keygen
 ```
 
 ![img.png](imgs/img.png)
