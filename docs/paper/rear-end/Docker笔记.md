@@ -1,7 +1,5 @@
 # Docker笔记
 
-
-
 ## 安装yum工具报错
 
 ### 错误信息
@@ -76,7 +74,10 @@ docker run -d \
 
 ### 添加别名
 
-命令docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}\t{{.Names}}"太长了，在root权限下输入
+```shell
+docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}\t{{.Names}}"
+```
+这条命令太长了，输入当然也不想输入，这个时候我们就可以开始偷懒了，在root权限下输入
 
 ```shell
 vi ~/.bashrc
@@ -114,10 +115,6 @@ alias dps='docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Ports}}\t{{.Status}
 ```shell
 docker inspect 容器名
 ```
-
-
-
-
 
 ## 自定义镜像
 

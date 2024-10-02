@@ -28,7 +28,7 @@ SpringMVC的优缺点
 
 首先打开你的idea创建项目的界面
 
-![image-20240921111708319](imgs\image-20240921111708319.png)
+![image-20240921111708319](imgs\SpringMVC框架快速入门注解开发\image-20240921111708319.png)
 
 之后在生成器旁边选择Maven，这里如果没有本地的Maven的话需要到官网进行下载，在工件位置选择webapp，为你的项目起一个名字，其他的属性可以不用进行修改，直接点击创建即可。
 
@@ -36,7 +36,7 @@ SpringMVC的优缺点
 
 等待创建完毕就能够看到项目的目录结构了，之后再main目录下新建一个文件夹，并且命名为`java`。
 
-![image-20240921204313406](imgs\image-20240921204313406.png)
+![image-20240921204313406](imgs\SpringMVC框架快速入门注解开发\image-20240921204313406.png)
 
 
 
@@ -62,7 +62,7 @@ SpringMVC的优缺点
 
 如果右上角不存在刷新按钮，请单击鼠标右键，选择Maven->重新加载项目
 
-![image-20240921204527955](imgs\image-20240921204527955.png)
+![image-20240921204527955](imgs\SpringMVC框架快速入门注解开发\image-20240921204527955.png)
 
 等待全部的红色字样都变为白色说明jar包下载成功，这个时候我们再进行下一步操作。
 
@@ -82,14 +82,14 @@ SpringMVC的优缺点
     }
 ```
 
-![image-20240921205942390](imgs\image-20240921205942390.png)
+![image-20240921205942390](imgs\SpringMVC框架快速入门注解开发\image-20240921205942390.png)
 
 接下来又在config文件中编写了一个`SpringMvcConfig`类，用来统一Spring当中的配置，
 
 - @Configuration的意思是告诉Spring这是一个配置类
 - @ComponentScan是包扫描器，告诉Spring要扫描这个包下面的全部文件。将controller的bean添加到容器当中使用。
 
-![image-20240921210411114](imgs\image-20240921210411114.png)
+![image-20240921210411114](imgs\SpringMVC框架快速入门注解开发\image-20240921210411114.png)
 
 然后又新建一个文件`ServletcontainersInitconfig`这个文件需要继承`AbstractDispatcherServletInitializer`这个类，然后重写他的三个抽象方法。
 
@@ -111,13 +111,13 @@ SpringMVC的优缺点
 return new String[]{"/"};
 ```
 
-![image-20240921211430533](imgs\image-20240921211430533.png)
+![image-20240921211430533](imgs\SpringMVC框架快速入门注解开发\image-20240921211430533.png)
 
 ### 最后准备
 
 接下来我们删除webapp/WEB-INF下的文件。
 
-![image-20240921212147394](imgs\image-20240921212147394.png)
+![image-20240921212147394](imgs\SpringMVC框架快速入门注解开发\image-20240921212147394.png)
 
 在`pom.xml`文件最后的build标签内添加下面这段代码，重新刷新maven就好了。
 
@@ -137,15 +137,15 @@ return new String[]{"/"};
 
 在右上角的编辑配置中，添加一个maven，将插件的内容填到当中去，注意不要输错命令，如果下载过Tomcat，在这里添加Tomcat的配置，不添加上面的这段配置也可以，注意上方也需要修改一部分，所以这里直接使用maven插件的方式运行。
 
-![image-20240921214137735](imgs\image-20240921214137735.png)
+![image-20240921214137735](imgs\SpringMVC框架快速入门注解开发\image-20240921214137735.png)
 
-![image-20240921214112126](imgs\image-20240921214112126.png)
+![image-20240921214112126](imgs\SpringMVC框架快速入门注解开发\image-20240921214112126.png)
 
 
 
 这样我们一个初始的Springmvc框架就已经完成搭建了。直接启动，通过浏览器打开就可以看到我们刚刚写的内容了。
 
-![image-20240921213707115](imgs\image-20240921213707115.png)
+![image-20240921213707115](imgs\SpringMVC框架快速入门注解开发\image-20240921213707115.png)
 
 ## 补充
 
