@@ -6,13 +6,13 @@
 
 ## 准备工作
 
-首先，确保电脑上存在[Microsoft C++ 构建工具](https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/))以此来确保项目的正常构建。
+首先，确保电脑上存在[Microsoft C++ 构建工具](https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/)以此来确保项目的正常构建。
 
 下载安装完成后进入软件，选择下载`使用 C++ 进行桌面开发`修改安装位置后就可以安装了。
 
 ![image-20241002145922593](imgs\Tauri+Vue创建桌面版程序\image-20241002145922593.png)
 
-其次，你需要确保你的电脑上已经安装了Rust的开发环境，如果没有，请[点击进入官网]([Install Rust - Rust Programming Language (rust-lang.org)](https://www.rust-lang.org/tools/install))
+其次，你需要确保你的电脑上已经安装了Rust的开发环境，如果没有，请[点击进入官网](https://www.rust-lang.org/tools/install)
 
 下载完成后，如果对于Rust大小并不关心，点击进行安装输入`1`点击回车即可。
 
