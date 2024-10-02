@@ -8,9 +8,9 @@
 
 首先，确保电脑上存在[Microsoft C++ 构建工具](https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/))以此来确保项目的正常构建。
 
-下载安装完成后进入软件，选择下载`使用 C++ 进行桌面开发`修改安装位置后就可以安装了
+下载安装完成后进入软件，选择下载`使用 C++ 进行桌面开发`修改安装位置后就可以安装了。
 
-![image-20241002145922593](imgs\Tauri+Vue创建桌面版程序\image-20241002145922593.png)
+![image-20241002145922593](imgs\TauriVue创建桌面版程序\image-20241002145922593.png)
 
 其次，你需要确保你的电脑上已经安装了Rust的开发环境，如果没有，请[点击进入官网]([Install Rust - Rust Programming Language (rust-lang.org)](https://www.rust-lang.org/tools/install))
 
@@ -20,15 +20,15 @@
 
 在需要安装的目录下分别建两个文件夹，名为`.cargo`与`.rustup`
 
-![image-20241002151646491](imgs\Tauri+Vue创建桌面版程序\image-20241002151646491.png)
+![image-20241002151646491](imgs\TauriVue创建桌面版程序\image-20241002151646491.png)
 
 将这两个文件添加到系统变量当中，并且修改Path变量。
 
-![image-20241002151846664](imgs\Tauri+Vue创建桌面版程序\image-20241002151846664.png)
+![image-20241002151846664](imgs\TauriVue创建桌面版程序\image-20241002151846664.png)
 
-![image-20241002151945216](imgs\Tauri+Vue创建桌面版程序\image-20241002151945216.png)
+![image-20241002151945216](imgs\TauriVue创建桌面版程序\image-20241002151945216.png)
 
-![image-20241002152114693](imgs\Tauri+Vue创建桌面版程序\image-20241002152114693.png)
+![image-20241002152114693](imgs\TauriVue创建桌面版程序\image-20241002152114693.png)
 
 完成后打开安装程序输入`1`回车即可
 
@@ -38,7 +38,7 @@
 cargo --version
 ```
 
-![image-20241002152422714](imgs\Tauri+Vue创建桌面版程序\image-20241002152422714.png)
+![image-20241002152422714](imgs\TauriVue创建桌面版程序\image-20241002152422714.png)
 
 ## 创建第一个项目
 
@@ -50,11 +50,11 @@ pnpm create tauri-app --rc
 
 我的项目配置初始化如下
 
-![image-20241002114604200](imgs\Tauri+Vue创建桌面版程序\image-20241002114604200.png)
+![image-20241002114604200](imgs\TauriVue创建桌面版程序\image-20241002114604200.png)
 
 跟随提示运行项目，运行成功显示页面。
 
-![image-20241002115006955](imgs\Tauri+Vue创建桌面版程序\image-20241002115006955.png)
+![image-20241002115006955](imgs\TauriVue创建桌面版程序\image-20241002115006955.png)
 
 ## 项目命令
 
