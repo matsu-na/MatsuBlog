@@ -190,7 +190,7 @@ echo 'hello world'
 
 ![image-20240920163645807](imgs\Linux操作系统笔记（9.20）\image-20240920163645807.png)
 
-## `：模板字符
+## `：模板字符（漂号）
 
 ```shell
 echo `pwd`
